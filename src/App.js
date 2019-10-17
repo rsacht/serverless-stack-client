@@ -5,6 +5,7 @@ import Routes from "./Routes";
 import { LinkContainer } from "react-router-bootstrap";
 import "./App.css";
 
+const [isAuthenticated, userHasAuthenticated] = useState(false);
 function App(props) {
   return (
     <div className="App container">
