@@ -44,6 +44,12 @@ export default function NewNote(props) {
       setIsLoading(false);
     }
   }
+  
+  function createNote(note) {
+    return API.post("notes", "/notes", {
+      body: note
+    });
+  }
 
   return (
     <div className="NewNote">
